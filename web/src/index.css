@@ -1,22 +1,25 @@
 :root {
-  --bg: #f4f6fb;
+  --bg: #f7f6f3;
   --surface: #ffffff;
-  --surface-alt: #f8f9fc;
-  --border: #e3e7ef;
-  --text: #12172b;
-  --text-muted: #67718a;
-  --primary: #2a5cdb;
-  --primary-dark: #1c3fa3;
-  --primary-light: #eaf0fd;
+  --surface-alt: #f4f2ee;
+  --border: #e6e3db;
+  --text: #1a1d24;
+  --text-muted: #71695c;
+  --primary: #1f2a44;
+  --primary-dark: #131a2c;
+  --primary-light: #eceef3;
+  --gold: #a9812f;
+  --gold-dark: #8a6a26;
+  --gold-light: #f6efdd;
   --success: #17a673;
   --success-light: #e8f9f2;
-  --danger: #e5484d;
-  --danger-light: #fdeaea;
-  --radius: 14px;
-  --radius-sm: 10px;
-  --shadow-sm: 0 1px 2px rgba(18, 23, 43, 0.05);
-  --shadow-md: 0 6px 20px rgba(18, 23, 43, 0.08);
-  --shadow-lg: 0 16px 40px rgba(18, 23, 43, 0.14);
+  --danger: #a3383d;
+  --danger-light: #f7ebe9;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --shadow-sm: 0 1px 2px rgba(26, 22, 12, 0.05);
+  --shadow-md: 0 6px 20px rgba(26, 22, 12, 0.07);
+  --shadow-lg: 0 16px 40px rgba(26, 22, 12, 0.16);
   font-family: "Heebo", "Segoe UI", Arial, sans-serif;
   color-scheme: light;
   -webkit-tap-highlight-color: transparent;
@@ -587,7 +590,7 @@ tr:last-child td {
 .champion-banner {
   text-align: center;
   padding: 40px 20px;
-  background: linear-gradient(135deg, var(--primary-light), var(--surface));
+  background: linear-gradient(135deg, var(--gold-light), var(--surface));
   border-radius: var(--radius);
   border: 1px solid var(--border);
 }
@@ -630,71 +633,66 @@ tr:last-child td {
 /* ---- Home hero ---- */
 
 .hero {
-  background: linear-gradient(135deg, var(--primary) 0%, #4a3fd6 100%);
-  border-radius: 20px;
-  padding: 30px 24px;
-  margin-bottom: 24px;
-  color: white;
-  box-shadow: var(--shadow-lg);
-  position: relative;
-  overflow: hidden;
-}
-
-.hero::after {
-  content: "🏓";
-  position: absolute;
-  font-size: 9rem;
-  opacity: 0.12;
-  inset-inline-end: -18px;
-  top: -20px;
-  transform: rotate(15deg);
-  pointer-events: none;
+  padding: 8px 0 32px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid var(--border);
 }
 
 .hero-badge {
-  display: inline-block;
-  background: rgba(255, 255, 255, 0.16);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  padding: 4px 12px;
-  border-radius: 999px;
+  display: block;
+  color: var(--gold-dark);
   font-size: 0.78rem;
   font-weight: 700;
-  margin-bottom: 12px;
+  letter-spacing: 0.06em;
+  margin-bottom: 14px;
 }
 
 .hero-title {
-  font-size: 1.65rem;
+  font-size: 2rem;
   font-weight: 800;
-  margin: 0 0 8px;
+  line-height: 1.25;
+  color: var(--text);
+  margin: 0 0 6px;
   position: relative;
+  display: inline-block;
+}
+
+.hero-title::after {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 3px;
+  background: var(--gold);
+  margin-top: 14px;
+  border-radius: 2px;
 }
 
 .hero-subtitle {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: rgba(255, 255, 255, 0.9);
-  margin: 0 0 18px;
-  max-width: 480px;
-  position: relative;
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+  margin: 18px 0 20px;
+  max-width: 540px;
 }
 
 .hero-features {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  position: relative;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
 }
 
 .hero-feature {
   display: flex;
   align-items: center;
   gap: 6px;
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 6px 12px;
-  border-radius: 999px;
-  font-size: 0.8rem;
   font-weight: 600;
+}
+
+.hero-feature-sep {
+  color: var(--border);
 }
 
 .tournament-list-title {

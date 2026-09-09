@@ -27,18 +27,19 @@ export default function Home() {
   return (
     <div className="page">
       <div className="hero">
-        <span className="hero-badge">🏓 ברוכים הבאים</span>
-        <h1 className="hero-title">ניהול תחרויות טניס שולחן, מההגרלה ועד האליפות</h1>
+        <span className="hero-badge">ברוכים הבאים</span>
+        <h1 className="hero-title">ניהול תחרויות טניס שולחן</h1>
         <p className="hero-subtitle">
-          כל מה שצריך כדי להריץ תחרות באולם: בחרו מספר שולחנות ושחקנים, חפשו דירוגים אמיתיים
-          מ־tttm.co.il או הזינו ידנית, קבלו חלוקה אוטומטית ומאוזנת לבתים או ברקט נוקאוט מסודר,
-          ועקבו אחרי כל משחק בלוח משחקים חי שמנצל את כל השולחנות במקביל. הכול נשמר בדפדפן שלכם —
-          גם אם האינטרנט נופל באמצע, התחרות לא נעלמת.
+          בחרו מספר שולחנות ושחקנים, חפשו דירוגים אמיתיים מ־tttm.co.il או הזינו ידנית, קבלו חלוקה
+          אוטומטית ומאוזנת לבתים או ברקט נוקאוט מסודר, ועקבו אחרי כל משחק בלוח משחקים חי שמנצל את
+          כל השולחנות במקביל. הנתונים נשמרים ישירות בדפדפן שלכם — בלי הרשמה ובלי התקנה.
         </p>
         <div className="hero-features">
-          <span className="hero-feature">⚡ הגרלה מאוזנת לפי דירוג</span>
-          <span className="hero-feature">📋 לוח משחקים חי לפי שולחנות</span>
-          <span className="hero-feature">💾 עובד גם בלי אינטרנט</span>
+          <span className="hero-feature">הגרלה מאוזנת לפי דירוג</span>
+          <span className="hero-feature-sep">·</span>
+          <span className="hero-feature">לוח משחקים חי לפי שולחנות</span>
+          <span className="hero-feature-sep">·</span>
+          <span className="hero-feature">שמירה מקומית בדפדפן</span>
         </div>
       </div>
 
